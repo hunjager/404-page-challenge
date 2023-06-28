@@ -15,6 +15,7 @@ header{
     font-family: 'Inconsolata', monospace;
     font-size: 24px;
     color: #333333;
+    margin-top: 20px;
 }
 button{
     font-family: 'Space Mono', monospace;
