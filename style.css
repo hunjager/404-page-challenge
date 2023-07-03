@@ -3,9 +3,10 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
+    width: 100vw;
     display: grid;
+    align-items: center;
+    justify-self:center;
     background-color: #FFFFFF;
 }
 img{
@@ -16,6 +17,7 @@ header{
     font-size: 24px;
     color: #333333;
     margin-top: 20px;
+    margin-left: 20px;
 }
 button{
     font-family: 'Space Mono', monospace;
@@ -27,7 +29,7 @@ button{
     color: #FFFFFF;
 
 }
-#image{
+#image{display: grid;
     width: 540px;
 }
 h1{
@@ -69,4 +71,69 @@ a{
 }
 span{
     font-weight: 500;
+}
+@media (max-width:450px) {
+    body{
+        width: 100%;
+    }
+    #image{
+        width: 100%;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+
+        margin-right: 0;
+        align-items: center;
+    }
+    h1{
+        width: 100%;
+        font-size: 48px;
+        line-height: 70px;
+    }
+    header{
+        margin-left: 20px;
+    }
+
+    p{
+        width: 100%;
+        font-size: 18px;
+    }
+    button{
+        margin-top: 0;
+    }
+    footer{
+        padding-bottom: 20px;
+        width: 100%;
+        
+    }
+    .inner{
+        margin-left: 10px;
+    }
+}
+@media (max-width:350px){
+    body{
+     
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        width: 90%;
+    }
+}
+@media (max-width:950px) {
+    .main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        padding-bottom: 10px;
+        
+    }
+    
 }
